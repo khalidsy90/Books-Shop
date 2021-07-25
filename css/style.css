@@ -1,6 +1,6 @@
 body{
     background-repeat: no-repeat;
-    color: white;
+    color:#eee
     text-align: center;
 }
 main{
@@ -43,7 +43,7 @@ form{
     width:50%;
     text-align: center;
 }
-table,th,td{
+table,th,td,tr{
     border: 1px solid white;
 }
 table{
