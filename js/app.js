@@ -28,7 +28,7 @@ btnSub.addEventListener('click',function(){
     grandtotal=0
     total()
     tot.remove()
-    tot.textContent=grandtotal
+    tot.textContent='Total :  '+grandtotal
     resultsction.appendChild(tot)
 })
 
