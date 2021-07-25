@@ -25,6 +25,7 @@ let tot=document.createElement('h3')
 
 btnSub.addEventListener('click',function(){
     tNewRow()
+    grandtotal=0
     total()
     tot.remove()
     tot.textContent=grandtotal
