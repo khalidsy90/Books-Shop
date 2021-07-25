@@ -35,13 +35,13 @@ let grandtotal=0
 
 btnSub.addEventListener('click',function(){   
     console.log(books);
-    savetolocal()
     tNewRow()
     grandtotal=0
     total()
     tot.remove()
     tot.textContent='Total :  '+grandtotal
     resultsction.appendChild(tot)
+    savetolocal()
 })
 
 form.addEventListener('submit',function(event){
