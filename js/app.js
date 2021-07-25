@@ -23,6 +23,9 @@ let form=document.querySelector('form[id=deatils]')
 let btnSub=document.querySelector('input[type=submit]')
 let tot=document.createElement('h3')
 
+
+
+
 btnSub.addEventListener('click',function(){
     tNewRow()
     grandtotal=0
@@ -51,9 +54,18 @@ function tHeader(){
 tHeader()
 
 function tNewRow(){
+
     let bookName=document.getElementById('bookname').value
-    let bookPrice=document.getElementById('bookprice').value
-    // console.log(bookName,bookPrice);
+    let bookPrice=document.getElementById('bookprice').value    
+
+    if(bookName == '' || bookPrice == ''){
+        alert('Please Enter Book deatils')
+        return
+    }
+    if(isNaN(bookPrice)){
+        alert("please Enter Just Numbers")
+        return
+    }
     let book =new BookShoop(bookName,bookPrice)
 
     let tr=document.createElement("tr");
